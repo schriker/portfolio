@@ -1,8 +1,18 @@
+const generateFavicons = (sizes) => {
+  return sizes.map(size => {
+    return {
+      src: `favicons/icon-${size}x${size}.png`,
+      sizes: `${size}x${size}`,
+      type: "image/png",
+    };
+  });
+};
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Frontend Developer Portfolio`,
+    description: `Hi! I’m Marcin, a junior frontend developer based in Poland currently looking for full time job in Rzeszów or Kraków. Most of the projects in portfolio are personal, but I do have some commercial experience with building landing pages.`,
+    author: `Marcin Janus`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,18 +23,60 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-typescript`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Frontend Developer Portfolio`,
+        short_name: `Portfolio`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#1a1540`,
+        theme_color: `#1a1540`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `${__dirname}/src/images/icon.png`, // This path is relative to the root of the site.
+        icons: generateFavicons([48, 72, 96, 144, 192, 256, 384, 512]),
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        excerpt_separator: `<!-- endexcerpt -->`,
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-137363469-1",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Space Mono`,
+          },
+          {
+            family: `Inter`,
+            variants: [`400`, `700`],
+          },
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

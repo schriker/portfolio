@@ -1,0 +1,63 @@
+.button {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  z-index: 999;
+  outline: 0;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button span {
+  width: 100%;
+  right: 0;
+  height: 2px;
+  position: absolute;
+  background-color: var(--green-color);
+  transition: all ease .2s;
+}
+
+.button span:nth-child(1) {
+  top: 0;
+}
+
+.button span:nth-child(2) {
+  top: 50%;
+  width: 75%;
+  transform: translate(0, -50%);
+}
+
+.button span:nth-child(3) {
+  bottom: 0;
+  width: 50%;
+}
+
+.active {
+  position: fixed;
+  top: 85px;
+  right: 75px;
+}
+
+.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(0, -50%) rotate(225deg);
+}
+
+.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.active span:nth-child(3) {
+  top: 50%;
+  width: 100%;
+  transform: translate(0, -50%) rotate(135deg);
+}
+
+@media (max-width: 425px) {
+  .active {
+    top: 55px;
+    right: 35px;
+  }
+}

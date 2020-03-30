@@ -1,0 +1,13 @@
+.thumbnail {
+  flex: 1 1 auto;
+  position: relative;
+  z-index: 1;
+  background-color: var(--blue-medium-color);
+}
+
+@media (max-width: 960px) {
+  .thumbnail {
+    margin-bottom: 30px !important;
+    width: 100%;
+  }
+}

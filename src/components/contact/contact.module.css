@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container h3 {
+  text-align: center;
+  width: 80%;
+  margin: 50px 0;
+  line-height: 48px;
+}
+
+@media (max-width: 425px) {
+  .container h3 {
+    font-size: 16px;
+  line-height: 32px;
+  }
+}

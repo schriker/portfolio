@@ -1,0 +1,12 @@
+.item {
+  position: relative;
+}
+
+.item a {
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+}

@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  list-style: none;
+  margin-right: 25px;
+}
+
+.menu li:last-of-type {
+  margin-right: 0;
+}
+
+.menu a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--blue-light-color);
+  text-decoration: none;
+  font-family: var(--space-mono-font);
+}
+
+.menu a span {
+  color: var(--green-color);
+  margin-right: 10px;
+}
+
+.menu a:hover {
+  transition: all ease .2s;
+  color: var(--green-color);
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .menu {
+    display: none;
+  }
+}

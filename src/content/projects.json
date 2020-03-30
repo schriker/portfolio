@@ -1,0 +1,58 @@
+[
+  {
+    "name": "ITBoard",
+    "description": "Main goal was to build fullstack app in JS from scratch, to practice user authentication and server side rendering.",
+    "link": "https://it.jarchiwum.pl/",
+    "github": "https://github.com/schriker/itboard-client",
+    "img": "itboard.png",
+    "stack": ["React", "Redux", "NextJS", "NodeJS", "Express", "MongoDB"]
+  },
+  {
+    "name": "PoorchatBot",
+    "description": "IRC Bot which listen users messages and saved them in the mongo database, so later on, after live stream is over, users can watch the live chat replay. It can also send messages.",
+    "link": "https://jarchiwum.pl/wonziu/2335317636517962?platform=facebook",
+    "github": "https://github.com/schriker/poorchatbot",
+    "img": "poorchatbot.png",
+    "stack": ["NodeJS", "Express", "MongoDB"]
+  },
+  {
+    "name": "Play2Gether",
+    "description": "Single page app build with React for social platform that will allow to find people for cooperative or multiplayer games. App is not finished yet, there are a few things that work and a lot that still need to be done. Check github for details.",
+    "link": "https://p2g.janusmarcin.pl/",
+    "github": "https://github.com/schriker/Play2Gether",
+    "img": "play2gether.png",
+    "stack": ["React", "Redux", "Firebase"]
+  },
+  {
+    "name": "Jarchiwum",
+    "description": "The app allows users to subscribe their favorite twitch streamers, and watch streams that they have missed. User then can add their own channels and/or remove them. Mark videos as watched and bookmarked.",
+    "link": "https://jarchiwum.pl/",
+    "github": "https://github.com/schriker/jar-vue",
+    "img": "jarchiwum.png",
+    "stack": ["Vue", "Vuex", "Firebase"]
+  },
+  {
+    "name": "The Spacjo Strzelec",
+    "description": "Whole app was build with help of React Hooks API wich was introduced with 16.8.0. Main goal was to build global state based on Context API and useReducer hook. So I can omit Redux and still have similar functionality of flux like state control.",
+    "link": "https://schriker.github.io/spacjo/",
+    "github": "https://github.com/schriker/spacjo",
+    "img": "spacjo.png",
+    "stack": ["React"]
+  },
+  {
+    "name": "BeIT",
+    "description": "My first app build with React. Users can create account and post or delete their simple one page resume. On the main page visitor can sort resumes by experience level, technology, language or city.",
+    "link": "https://beit.janusmarcin.pl/",
+    "github": "https://github.com/schriker/beit",
+    "img": "beit.png",
+    "stack": ["React", "Redux", "Firebase"]
+  },
+  {
+    "name": "PersonAffix",
+    "description": "Simple vanillajs script to affix elements on page. No jQuery needed. Helped me with understanding webpack and babel configuration.",
+    "link": "https://schriker.github.io/personaffix/",
+    "github": "https://github.com/schriker/personaffix",
+    "img": "affix.png",
+    "stack": ["JavaScript"]
+  }
+]
